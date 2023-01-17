@@ -8,7 +8,7 @@ const Container = styled.div`
 width: 100%%;
 height: 83.7vh;
 display: flex;
-background-color: coral;
+
 position: relative;
 
 `
@@ -38,45 +38,72 @@ const Wrapper = styled.div`
 height:100%;
 `
 const Slide = styled.div`
-
-height:100vh;
+width:100vw;
+height:80vh;
 display: flex;
 align-items: center;
 `
+
 const ImgContainer = styled.div`
 height:100%;
 flex:1;
+
+`
+
+const Image = styled.img`
+
+height: 104%;
+
 `
 const InfoContaner = styled.div`
 flex:1;
+padding:20px;
+
 `
-const Image = styled.img`
-height:84%;
-width: 99.1vw;
+const Title = styled.h1`
+font-size:70px;
+
 `
+const Desc = styled.p`
+margin: 50px 0px;
+font-size:20px;
+font-weight:500;
+letter-spacing:3px;
+`
+const Button = styled.button`
+padding: 10px;
+font-size:20px;
+background-color: transparent;
+cursor: pointer;
+`
+
+
+
 
 const Slider = ()=> {
     return (
         <Container>
+   
 <Arrow direction="left">
 <AiOutlineArrowLeft />
-
-
 </Arrow>
+
 <Wrapper>
-    <Slide>
+<Slide>
 <ImgContainer>
-        <Image src="https://www.moneysavingexpert.com/content/dam/mse/images/hero/hero-shopping-CheapOnlineShop.jpg" />
+<Image src="https://retailworldmagazine.com.au/wp-content/uploads/2020/09/shutterstock_725791648-scaled.jpg" />
 </ImgContainer>
 <InfoContaner>
-
-
+<Title> SUMMER SALE</Title>
+<Desc> DON'T CPMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS</Desc>
+<Button>SHOW NOW</Button>
 </InfoContaner>
 </Slide>
 </Wrapper>
 <Arrow direction="right">
     <AiOutlineArrowRight />
 </Arrow>
+
 
         </Container>
 
